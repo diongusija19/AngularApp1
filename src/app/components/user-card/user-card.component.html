@@ -1,0 +1,13 @@
+<section class="card">
+  <img
+    [src]="user.profileImage"
+    [alt]="user.fullName + ' profile picture'"
+    class="avatar"
+  />
+  <div class="details">
+    <h2>{{ user.fullName }}</h2>
+    <p class="title">{{ user.title }}</p>
+    <p>Age: <strong>{{ user.age }}</strong></p>
+    <p>Location: <strong>{{ user.location }}</strong></p>
+  </div>
+</section>

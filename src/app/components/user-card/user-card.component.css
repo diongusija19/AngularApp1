@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #ffffff;
+  border: 1px solid #d8e1ea;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #dde8f5;
+}
+
+.details h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1f3247;
+}
+
+.details p {
+  margin: 0.3rem 0;
+  color: #37516d;
+}
+
+.title {
+  font-weight: 600;
+}

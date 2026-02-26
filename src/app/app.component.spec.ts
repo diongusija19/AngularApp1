@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [AppComponent]
     }).compileComponents();
   });
 
@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'AngularApp1' title`, () => {
+  it('should initialize with sample user data', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AngularApp1');
+    expect(app.user.fullName).toEqual('Ariana Blake');
   });
 
-  it('should render title', () => {
+  it('should render dashboard heading', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, AngularApp1');
+    expect(compiled.querySelector('h1')?.textContent).toContain('User Profile Dashboard');
   });
 });

@@ -1,0 +1,10 @@
+<section class="status-card">
+  <h3>User Status</h3>
+  <p>
+    <span class="dot" [class.online]="isOnline"></span>
+    {{ isOnline ? 'Online' : 'Offline' }}
+  </p>
+  <button type="button" (click)="toggleStatus()">
+    Set {{ isOnline ? 'Offline' : 'Online' }}
+  </button>
+</section>

@@ -1,0 +1,14 @@
+<section class="bio-card">
+  <h3>About</h3>
+
+  @if (!editing) {
+    <p>{{ bio }}</p>
+    <button type="button" (click)="startEditing()">Edit Bio</button>
+  } @else {
+    <textarea [(ngModel)]="draftBio" rows="4"></textarea>
+    <div class="actions">
+      <button type="button" class="save" (click)="saveBio()">Save</button>
+      <button type="button" class="cancel" (click)="cancelEditing()">Cancel</button>
+    </div>
+  }
+</section>

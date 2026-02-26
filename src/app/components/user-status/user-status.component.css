@@ -1,0 +1,39 @@
+.status-card {
+  background: #ffffff;
+  border: 1px solid #d8e1ea;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+h3 {
+  margin-top: 0;
+  color: #1f3247;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #2b4a68;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e17a7a;
+  display: inline-block;
+}
+
+.dot.online {
+  background: #3abf87;
+}
+
+button {
+  background: #2d7ff9;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+}
