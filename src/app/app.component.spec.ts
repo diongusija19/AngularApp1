@@ -17,7 +17,7 @@ describe('AppComponent', () => {
   it('should initialize with sample user data', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.user.fullName).toEqual('Ariana Blake');
+    expect(app.user.fullName).toEqual('Dion Gusija');
   });
 
   it('should render dashboard heading', () => {

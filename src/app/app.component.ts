@@ -13,12 +13,12 @@ import { UserProfile } from './models/user-profile';
 export class AppComponent {
   user: UserProfile = {
     id: 1,
-    fullName: 'Ariana Blake',
-    age: 29,
+    fullName: 'Dion Gusija',
+    age: 26,
     title: 'Frontend Engineer',
-    location: 'Austin, TX',
+    location: 'London, Ontario',
     profileImage:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80',
+      'https://api.dicebear.com/9.x/adventurer/svg?seed=Dion-Male-Profile',
     isOnline: true,
     bio: 'I build polished web experiences and mentor junior developers. I also love trail running and specialty coffee.'
   };
